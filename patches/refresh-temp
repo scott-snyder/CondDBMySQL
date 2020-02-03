@@ -1,0 +1,16 @@
+Bottom: 1849c28a981ac098955442e87a66af162e453368
+Top:    0a0c4bebcd6727439160b26a57eba83f7202558b
+Author: scott snyder <sss@karma>
+Date:   2020-02-03 00:32:45 -0500
+
+Refresh of gitignore
+
+---
+
+diff --git a/.gitignore b/.gitignore
+index baba978..49e33a3 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -1 +1,2 @@
++*~
+ src/config.h
