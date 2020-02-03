@@ -1,5 +1,5 @@
 /*
- Copyright (C) 1999-2003 FreeDevices.org  geral@freedevices.org
+ Copyright (C) 1999-2003, 2020 FreeDevices.org  geral@freedevices.org
 
  This program is free software; you can redistribute it and/or
  modify it under the terms of the GNU General Public License
@@ -573,8 +573,8 @@ void MySqlObjectMgr::addTag(int folderId, int newTagId, int oldTagId)
     }
     MySqlResult *res = select(query);
     // Now tag the objects
-    if ( res->countRows()!=0 )
-	//Deleting objects that are allready tagged. If we don't delete them they will be stored in
+    if ( res->countRows()!=0 ) {
+	//Deleting objects that are already tagged. If we don't delete them they will be stored in
 	//the tag2obk_tbl_# table again and again....
 	query << "DELETE FROM " TAG2OBJ_TBL_N << folderId << " WHERE tag_id = " << newTagId;
 	execute(query);
@@ -585,6 +585,7 @@ void MySqlObjectMgr::addTag(int folderId, int newTagId, int oldTagId)
 		  << newTagId << "," << res->getField(0) << "," << res->getCondDBKeyField(1) << "," << res->getCondDBKeyField(2) << ")";
 	    execute(query);
 	} while (res->nextRow());
+    }
 
     delete res;
 }
