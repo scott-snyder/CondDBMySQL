@@ -1,5 +1,5 @@
 /*
- Copyright (C) 1999-2003 FreeDevices.org  geral@freedevices.org
+ Copyright (C) 1999-2003, 2020 FreeDevices.org  geral@freedevices.org
 
  This program is free software; you can redistribute it and/or
  modify it under the terms of the GNU General Public License
@@ -147,13 +147,13 @@ int main(){
 
 	//Get's the actual time in order to change the sinceTime
 	time (&tnow);
-	SimpleTime since (tnow);
+	SimpleTime since2 (tnow);
 
 	//Changes the sinceTime
 	//Note: when we create a table the setSinceTime function is used. 
 	//When we want to do an update we use the changeSinceTime function
 	//providing also the number of the row - in this case equal to the number of the ID
-	tableId->changeSinceTime(nextId, since);
+	tableId->changeSinceTime(nextId, since2);
 
 	//Storing the data in the database
 	myData->store(folder, tableId);
