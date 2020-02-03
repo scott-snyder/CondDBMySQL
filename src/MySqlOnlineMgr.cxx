@@ -1,5 +1,5 @@
 /*
- Copyright (C) 1999-2003 FreeDevices.org  geral@freedevices.org
+ Copyright (C) 1999-2003, 2020 FreeDevices.org  geral@freedevices.org
 
  This program is free software; you can redistribute it and/or
  modify it under the terms of the GNU General Public License
@@ -791,7 +791,7 @@ void MySqlOnlineMgr::storeOnlId (int fldId, int partId, CondDBTable *table)
 	    Id = values[0];
 	} while ( blockId==Id && l<table->getNumRows());
 
-	SimpleTime tills, sinces;
+	SimpleTime tills2, sinces;
 	table->getSinceTime(l-1, sinces);
 	since=sinces;
 
