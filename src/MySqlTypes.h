@@ -1,5 +1,5 @@
 /*
- Copyright (C) 1999-2003 FreeDevices.org  geral@freedevices.org
+ Copyright (C) 1999-2003, 2020 FreeDevices.org  geral@freedevices.org
 
  This program is free software; you can redistribute it and/or
  modify it under the terms of the GNU General Public License
@@ -187,10 +187,10 @@ inline MySqlHandle::~MySqlHandle()
     if ( is_opened )
     {
 // CondDBLog
-      if (theLog->isUsable())
+      if (theLog->isUsable()) 
 	theLog->StoreLog("MySqlHandle:: Connection Successfully closed!");
 
-	mysql_close(&mysqlApp);
+      mysql_close(&mysqlApp);
     }
 }
 

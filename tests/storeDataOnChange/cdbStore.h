@@ -1,5 +1,5 @@
 /*
- Copyright (C) 1999-2003 FreeDevices.org  geral@freedevices.org
+ Copyright (C) 1999-2003, 2020 FreeDevices.org  geral@freedevices.org
 
  This program is free software; you can redistribute it and/or
  modify it under the terms of the GNU General Public License
@@ -38,7 +38,7 @@ extern "C" {
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>
-};
+}
 #include <iostream>
 
 
