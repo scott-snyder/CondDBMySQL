@@ -162,7 +162,7 @@ MARK_AS_ADVANCED( EXECUTABLE_INSTALL_DIR )
 INCLUDE_DIRECTORIES( ./include )
 
 
-ADD_DEFINITIONS( "-Wall -ansi" )
+ADD_DEFINITIONS( "-Wall " )
 ADD_DEFINITIONS( -DMYSQL_INIT_STR="localhost:mydb:calvin:hobbes" )
 
 AUX_SOURCE_DIRECTORY( ./src library_sources )
@@ -232,5 +232,6 @@ DISPLAY_STD_VARIABLES()
 
 
 # generate and install following configuration files
-GENERATE_PACKAGE_CONFIGURATION_FILES( CondDBMySQLConfig.cmake CondDBMySQLConfigVersion.cmake CondDBMySQLLibDeps.cmake )
+GENERATE_PACKAGE_CONFIGURATION_FILES( CondDBMySQLConfig.cmake CondDBMySQLConfigVersion.cmake  )
 
+INSTALL (FILES ${PROJECT_SOURCE_DIR}/cmake/CondDBMySQLLibDeps.cmake DESTINATION lib/cmake )
