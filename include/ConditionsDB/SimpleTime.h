@@ -77,7 +77,7 @@ class SimpleTime {
  public:
   // Construction/Destruction
   SimpleTime();
-  SimpleTime(const SimpleTime & t) {timeval=t.toTimeT();};
+  SimpleTime(const SimpleTime & t) : timeval (t.toTimeT()) {}
   SimpleTime(const time_t &);
   SimpleTime(const TimeT &);
   SimpleTime(const timeAndDate_t &);
