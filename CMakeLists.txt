@@ -232,5 +232,6 @@ DISPLAY_STD_VARIABLES()
 
 
 # generate and install following configuration files
-GENERATE_PACKAGE_CONFIGURATION_FILES( CondDBMySQLConfig.cmake CondDBMySQLConfigVersion.cmake CondDBMySQLLibDeps.cmake )
+GENERATE_PACKAGE_CONFIGURATION_FILES( CondDBMySQLConfig.cmake CondDBMySQLConfigVersion.cmake  )
 
+INSTALL (FILES ${PROJECT_SOURCE_DIR}/cmake/CondDBMySQLLibDeps.cmake DESTINATION lib/cmake )
