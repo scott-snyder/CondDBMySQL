@@ -1,6 +1,7 @@
 Version: 1
-Previous: None
-Head: 91e61a9673da4b0045f737d2a45504b5235f6eec
+Previous: 2a3567d018ad22d52f7cbf70cf577424b7780a67
+Head: 625cea78bfd7e483c730fb9daf2261b58e7cd7f2
 Applied:
+  cmake: 625cea78bfd7e483c730fb9daf2261b58e7cd7f2
 Unapplied:
 Hidden:
