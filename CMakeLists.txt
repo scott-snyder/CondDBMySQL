@@ -162,7 +162,7 @@ MARK_AS_ADVANCED( EXECUTABLE_INSTALL_DIR )
 INCLUDE_DIRECTORIES( ./include )
 
 
-ADD_DEFINITIONS( "-Wall -ansi" )
+ADD_DEFINITIONS( "-Wall " )
 ADD_DEFINITIONS( -DMYSQL_INIT_STR="localhost:mydb:calvin:hobbes" )
 
 AUX_SOURCE_DIRECTORY( ./src library_sources )
