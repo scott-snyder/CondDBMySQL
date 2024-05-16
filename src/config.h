@@ -1,4 +1,4 @@
-#define CONDDBROOT "/home/sss/ilc/soft/CondDBMySQL"
+#define CONDDBROOT "/home/local/soft/CondDBMySQL"
 
 /*defines to 1 if the system is big endian*/
 /* #undef CONDDB_BIGENDIAN */
