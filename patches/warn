@@ -12,3 +12,4 @@ Fix compilation warnings seen with gcc14.
   a signed integer.
 - Member function parameter shadowing a data member, and variable
   shadowing variable in outer scope.
+- Extraneous trailing semicolon.
