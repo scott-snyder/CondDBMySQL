@@ -3,4 +3,12 @@ Top:    0e6edcc4a20351f1d5f421099d1a326a4ce43376
 Author: scott snyder <sss@karma>
 Date:   2020-02-03 00:32:04 -0500
 
-Fix compilation warnings.
+Fix compilation warnings seen with gcc14.
+
+- Misleading indentation.
+- Unused variables.
+- Use numeric_limits rather than hardcoding limits for int64_t.  Fixes in
+  passing a warning that a constant is too large to be represented as
+  a signed integer.
+- Member function parameter shadowing a data member, and variable
+  shadowing variable in outer scope.
