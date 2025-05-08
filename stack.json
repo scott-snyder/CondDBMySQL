@@ -1,11 +1,12 @@
 {
   "version": 5,
-  "prev": "959f82d2789b52bc700b4816ba9077b9c0788cbb",
-  "head": "f69bfad5e83831b7549b1c615dce636f9dfda1cb",
+  "prev": "70dc02ee4bdde455bee003974ad554083e1c298d",
+  "head": "2aad9cd092ff0d804336840d78f07ad924823e31",
   "applied": [
     "gitignore",
     "cmake",
-    "warn"
+    "warn",
+    "utf8"
   ],
   "unapplied": [],
   "hidden": [],
@@ -18,6 +19,9 @@
     },
     "warn": {
       "oid": "f69bfad5e83831b7549b1c615dce636f9dfda1cb"
+    },
+    "utf8": {
+      "oid": "2aad9cd092ff0d804336840d78f07ad924823e31"
     }
   }
 }

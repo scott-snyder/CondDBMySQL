@@ -1,0 +1,8 @@
+Bottom: dcae55f48d377797fe8c7d39ec6fab734af5ad86
+Top:    dcae55f48d377797fe8c7d39ec6fab734af5ad86
+Author: sss <sss@karma>
+Date:   2025-05-08 13:00:13 -0400
+
+Convert latin1 encodings to utf-8.
+
+Avoids warnings from clang.
