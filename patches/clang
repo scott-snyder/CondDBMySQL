@@ -1,0 +1,12 @@
+Bottom: bbd63040267fb94f85c1b045473c62c2cbd6814d
+Top:    bbd63040267fb94f85c1b045473c62c2cbd6814d
+Author: sss <sss@karma>
+Date:   2025-05-08 13:41:53 -0400
+
+Fix clang warnings.
+
+ - Remove obsolete interface/implementation pragmas.
+ - Wrong type for std::string indices.
+ - Fix use of pointers to dangling temporaries.
+ - Possible use of uninitialized variable.
+ - Avoid warnings about precision loss in int64->double conversion.
