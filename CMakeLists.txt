@@ -1,6 +1,6 @@
 #################################################################
 # CMakeLists to build CondDBMySQL
-CMAKE_MINIMUM_REQUIRED(VERSION 2.6 FATAL_ERROR)
+CMAKE_MINIMUM_REQUIRED(VERSION 3.10 FATAL_ERROR)
 #################################################################
 
 
